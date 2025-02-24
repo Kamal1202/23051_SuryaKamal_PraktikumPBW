@@ -1,0 +1,91 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: antiquewhite;
+}
+
+/* .head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navhead{
+    width: 60%;
+    border-collapse: collapse;
+}
+
+.navhead td{
+    text-align: center;
+    vertical-align: middle;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+.navhead td a:hover {
+    color: darkgoldenrod;
+} */
+
+.photoKamal{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    display: block;
+    margin: auto;
+}
+
+.intro h2{
+    text-align: center;
+    color: gray;
+}
+
+.intro p{
+    text-align: center;
+    color: gray;
+}
+
+.intro h3{
+    text-align: center;
+    color: gray;
+}
+
+.hobbies {
+    width: 45%;
+    border-collapse: collapse;
+    margin-left: 325px;
+}
+
+.hobbies td{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer h2{
+    text-align: center;
+    color: gray;
+}
+
+.contact{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.contact a{
+    text-decoration: none;
+    color: gray;
+}
