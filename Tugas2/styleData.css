@@ -1,0 +1,111 @@
+/* Reset dan pengaturan global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style Container untuk 2 Card*/
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #f4f4f4;
+  }
+  
+  /* Style Card */
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    width: 40rem;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .card h2, .card h3{
+    text-align: center;
+    padding: 7px;
+  }
+
+  /* Style Form Input */
+  .formGrup {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGrup label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .formGrup input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style button */
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: rgb(0, 63, 139);
+  }
+  
+  /* Style Tabel */
+  table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 1rem;
+  }
+  
+  table thead th {
+    background-color: #007bff; 
+    color: white;
+    border: 1px solid white; 
+    padding: 10px;
+    text-align: center;
+  }
+  
+  table tbody td{
+    border: 1px solid #ccc; 
+    padding: 8px;
+    text-align: center;
+  }
+  
+  table tfoot td {
+    font-weight: bold; 
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: #f4f4f4;
+  }
+  
+
+/* Style Footer */
+footer {
+    background-color: #007bff; 
+    color: white; 
+    text-align: center; 
+    width: 50%; 
+    margin: 20px auto; 
+    padding: 15px 20px; 
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
