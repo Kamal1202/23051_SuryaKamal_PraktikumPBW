@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Penjualan</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-200 flex flex-col items-center py-10">
+
+    <!-- Container Utama -->
+    <div class="flex flex-col items-center gap-8 w-full">
+
+        <!-- Card Form Penjualan -->
+        <div class="bg-white p-6 w-[40rem] shadow-lg rounded-lg">
+            <h2 class="text-center text-xl font-bold mb-4">Form Penjualan</h2>
+
+            <div class="flex flex-col gap-4">
+                <div class="flex flex-col">
+                    <label class="font-semibold">Produk</label>
+                    <input type="text" class="border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="flex flex-col">
+                    <label class="font-semibold">Jumlah</label>
+                    <input type="number" class="border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="flex flex-col">
+                    <label class="font-semibold">Harga</label>
+                    <input type="text" class="border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500">
+                </div>
+                <button class="bg-blue-600 text-white p-3 rounded-md font-semibold hover:bg-blue-800">Tambahkan</button>
+            </div>
+        </div>
+
+        <!-- Card Data Penjualan -->
+        <div class="bg-white p-6 w-[40rem] shadow-lg rounded-lg">
+            <h3 class="text-center text-xl font-bold mb-4">Data Penjualan Bulanan</h3>
+
+            <table class="w-full border-collapse border border-gray-300">
+                <thead>
+                    <tr class="bg-blue-600 text-white">
+                        <th class="border border-white p-2">No</th>
+                        <th class="border border-white p-2">Produk</th>
+                        <th class="border border-white p-2">Penjualan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="text-center">
+                        <td class="border border-gray-300 p-2">1</td>
+                        <td class="border border-gray-300 p-2">Sepatu</td>
+                        <td class="border border-gray-300 p-2">Rp25.000.000</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="border border-gray-300 p-2">2</td>
+                        <td class="border border-gray-300 p-2">Tas</td>
+                        <td class="border border-gray-300 p-2">Rp15.000.000</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="border border-gray-300 p-2">3</td>
+                        <td class="border border-gray-300 p-2">Jam Tangan</td>
+                        <td class="border border-gray-300 p-2">Rp10.000.000</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="font-bold text-center bg-gray-200">
+                        <td colspan="2" class="border border-gray-300 p-2">Total Penjualan</td>
+                        <td class="border border-gray-300 p-2">Rp50.000.000</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center w-1/2 mt-10 p-4 rounded-lg shadow-lg">
+        © Surya Kamal - 2310631170051. All Right Reserved
+    </footer>
+
+</body>
+</html>
