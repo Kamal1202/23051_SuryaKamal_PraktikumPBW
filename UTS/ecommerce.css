@@ -1,0 +1,156 @@
+        body {
+            font-family: 'Roboto', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        :root {
+            --primary-red: #830909;
+            --primary-black: #202227;
+        }
+
+        header {
+            background: linear-gradient(to bottom, var(--primary-black), #1a1b1e);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        nav {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+
+        nav h1 {
+            font-size: 2.25rem;
+            letter-spacing: 1px;
+        }
+
+        nav ul li a {
+            font-size: 1.25rem;
+            position: relative;
+            transition: all 0.4s ease;
+            padding-bottom: 0.5rem;
+        }
+
+        nav ul li a:hover::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(to right, var(--primary-red), #a11212);
+            transform: scaleX(1);
+            transform-origin: bottom left;
+            transition: transform 0.4s ease;
+        }
+
+        nav ul li a::after {
+            transform: scaleX(0);
+            transform-origin: bottom left;
+        }
+
+        section {
+            min-height: 100vh;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.7s ease-in-out;
+            scroll-margin-top: 30px;
+        }
+
+        section.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-anim {
+            transition: all 0.3s ease;
+        }
+
+        .btn-anim:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 50;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .popup-content {
+            background: var(--primary-black);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 800px;
+            width: 90%;
+            position: relative;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .popup-close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .carousel-img {
+            max-height: 400px;
+            object-fit: contain;
+        }
+
+        .section-bg {
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, var(--primary-black) 100%);
+        }
+
+        /* Social Media Link Styling */
+        .social-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover img {
+            transform: scale(1.1);
+        }
+
+        .social-link:hover .username {
+            color: var(--primary-red);
+        }
